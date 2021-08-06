@@ -21,7 +21,6 @@ SET time_zone = "+00:00";
 --
 -- Database: `edjbbaut`
 --
-USE nexttest
 -- --------------------------------------------------------
 
 --
@@ -39,7 +38,8 @@ CREATE TABLE `jobs` (
   `status` tinyint(1) DEFAULT NULL,
   `createdAt` datetime NOT NULL,
   `updatedAt` datetime NOT NULL,
-  `userId` int(11) DEFAULT NULL
+  `userId` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
@@ -67,7 +67,8 @@ CREATE TABLE `posts` (
   `status` tinyint(1) DEFAULT NULL,
   `createdAt` datetime NOT NULL,
   `updatedAt` datetime NOT NULL,
-  `userId` int(11) DEFAULT NULL
+  `userId` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
@@ -98,7 +99,8 @@ CREATE TABLE `users` (
   `gender` varchar(1) DEFAULT NULL,
   `status` tinyint(1) DEFAULT NULL,
   `createdAt` datetime NOT NULL,
-  `updatedAt` datetime NOT NULL
+  `updatedAt` datetime NOT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
