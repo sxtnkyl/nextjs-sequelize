@@ -20,12 +20,6 @@ if (config.use_env_variable) {
     config.username,
     config.password,
     config,
-    {pool: {
-      max: 5,
-      min: 0,
-      acquire: 30000,
-      idle: 10000
-    }}
   );
 }
 /* fs.readdirSync(__dirname) */
